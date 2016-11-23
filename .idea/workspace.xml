@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="demo07.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo07/demo07.html">
+      <file leaf-file-name="demo08.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo08/demo08.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            <state relative-caret-position="324">
+              <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -55,6 +55,7 @@
         <option value="$PROJECT_DIR$/demo05/demo05.html" />
         <option value="$PROJECT_DIR$/demo06/demo06.html" />
         <option value="$PROJECT_DIR$/demo07/demo07.html" />
+        <option value="$PROJECT_DIR$/demo08/demo08.html" />
       </list>
     </option>
   </component>
@@ -241,7 +242,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="demo07" />
+              <option name="myItemId" value="demo08" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -263,6 +264,12 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\用户目录\我的文档\GitHub\react-master\" />
+      <recent name="D:\用户目录\我的文档\GitHub\react-master\demo07" />
+    </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.demo07.html">
     <configuration default="false" name="demo07.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-master/demo07/demo07.html">
@@ -702,12 +709,12 @@
       <option name="presentableId" value="Default" />
       <updated>1479879284275</updated>
       <workItem from="1479879286913" duration="1829000" />
-      <workItem from="1479881187930" duration="3571000" />
+      <workItem from="1479881187930" duration="4632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5400000" />
+    <option name="totallyTimeSpent" value="6461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="756" y="11" width="1122" height="941" extended-state="0" />
@@ -859,8 +866,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo07/demo07.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        <state relative-caret-position="82">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo08/demo08.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
           <folding />
         </state>
       </provider>
