@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--使用react必须的三个库: react.js是react的核心库，react-dom.js提供与dom相关
+	的功能，browser.min.js讲JSX语法转为javasript语法，这一步很消耗时间，上线前
+	应该放到服务器中完成-->
+	<script src="../build/react.js"></script>
+	<script src="../build/react-dom.js"></script>
+	<script src="../build/browser.min.js"></script>
+</head>
+<body>
+	<div id="example"></div>
+	<!--react特有的JSX语法，所以必须type属性必须是text/babel-->
+	<script type="text/babel">
+		var names = ['Alice','Emily','Kate'];
+		
+		
+		/*ReactDOM.render是React的基本方法，用于将模板转成HTML语言，并且插入指定的DOM节点中*/
+		/*{}代表解析的是js语句 <>html标签开头，代表解析的是HTML*/
+			
+		ReactDOM.render(
+			<div>
+			{
+				/*map:遍历数组中每一项运行给定函数，返回每次函数调用的结果组成的数组*/
+				names.map(function (name){
+					return <div>Hello,{name}!</div>
+				})
+			}	
+			</div>,
+			document.getElementById('example')
+		);
+	</script>
+</body>
+</html>
