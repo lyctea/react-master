@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+    <div id="example"></div>
+    <script type="text/babel">
+        var Input = React.createClass({
+            getInitialState: function () {
+                //初始化状态
+                return {value: 'Hello!'};
+            },
+            handleChange: function (event) {
+                //event.target.value 读取用户输入的值
+                this.setState({value: event.target.value});
+            },
+            render: function () {
+                var value = this.state.value;
+                return (
+                        <div>
+                            <input type="text" value={value} onChange={this.handleChange}/>
+                            <p>{value}</p>
+                        </div>
+                );
+            }
+        });
+        ReactDOM.render(
+                <Input />,
+                document.getElementById('example')
+        );
+    </script>
+</body>
+</html>
