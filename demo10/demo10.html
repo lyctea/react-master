@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+    <div id="example"></div>
+    <script type="text/babel">
+        var Hello = React.createClass({
+            getInitialState: function () {
+              return{
+                opacity: 1.0
+              };
+            },
+            //已经插入dom后自动调用，有5中状态
+            /*componentWillMount()  将要插入dom
+             componentDidMount()    已经插入dom
+             componentWillUpdate(object nextProps, object nextState)
+             componentDidUpdate(object prevProps, object prevState)
+             componentWillUnmount()
+             */
+
+            componentDidMount: function () {
+              this.timer = setInterval(function () {
+                  var opacity = this.state.opacity;
+                  opacity -=  0.05;
+                  if (opacity < 0.1){
+                      opacity = 1.0;
+                  }
+                  this.setState({
+                      opacity: opacity
+                     }
+                  );
+              }.bind(this),100);
+                //bind指定当前函数的环境
+            },
+            render: function () {
+                return(
+                        // React 组件样式是一个对象，所以第一重大括号表示这是 JavaScript 语法，
+                        // 第二重大括号表示样式对象
+                        <div style={{opacity: this.state.opacity}}>
+                            Hello {this.props.name}
+                        </div>
+                );
+            }
+        });
+        ReactDOM.render(
+                <Hello name="world"/>,
+                document.getElementById('example')
+        );
+    </script>
+</body>
+</html>
