@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../build/react.js"></script>
+	<script src="../build/react-dom.js"></script>
+	<script src="../build/browser.min.js"></script>
+</head>
+<body>
+	<div id="example"></div>
+	<script type="text/babel">
+		/*创建一个组件,所有的组件类必须有自己的render方法，用于输出组件*/
+		var HelloMessage = React.createClass({
+            render: function(){
+            	/*React中的每一个组件，都包含有一个属性（props），
+            	 * 属性主要是从父组件传递给子组件的，在组件内部，
+            	 我们可以通过this.props获取属性对象*/
+            	/*只能包含一个顶层标签*/
+                return <h1>Hello {this.props.name}</h1>;
+            }
+        });
+        ReactDOM.render(
+        	/*得到一个HelloMessage实例*/
+            <HelloMessage name = "John" />,
+            document.getElementById('example')
+        );
+	</script>
+</body>
+</html>
